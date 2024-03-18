@@ -722,11 +722,11 @@ footer {
 
 .copyright {
     max-width: 100%;
-   margin-bottom: -3rem;
+   margin-bottom: -2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5rem;
+    padding: 1rem;
     background-color: #323030e0;
     & h3 {
         font-size: 0.9rem;
@@ -738,7 +738,7 @@ footer {
     a {
         font-size: 0.6rem;
         letter-spacing: 0;
-
+        padding-top: 10px;
         font-style: oblique;
 
     }
@@ -752,10 +752,10 @@ footer {
 
     & .fa-brands {
         background-color: var(--black);
-        padding: 1px;
         width: 40px;
         aspect-ratio: 1;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
+        padding: 5px;
         display: flex;
         align-items: center;
         justify-content: center;
