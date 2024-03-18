@@ -1,0 +1,52 @@
+[1mdiff --git a/contactsUs.html b/contactsUs.html[m
+[1mindex fe45cb3..1c59f56 100644[m
+[1m--- a/contactsUs.html[m
+[1m+++ b/contactsUs.html[m
+[36m@@ -158,7 +158,7 @@[m
+     <end class="content copyright">[m
+         <div>[m
+             <h3>Copyright ©2024 DC College hostel-All rights reserved. </h3>[m
+[31m-            <h6>Made by <a href="https://www.instagram.com/.manjitk.019_____" target="_blank"><strong[m
+[32m+[m[32m            <h6>Made by <a href="https://manjit019.github.io/portfolio.github.io/" target="_blank"><strong[m
+                         style="background-color: #6bcfdee3;padding:0 8px;border-radius: 10px;">Manjit</strong></a>[m
+             </h6>[m
+         </div>[m
+[1mdiff --git a/downloads.html b/downloads.html[m
+[1mindex 5affea7..e942cf4 100644[m
+[1m--- a/downloads.html[m
+[1m+++ b/downloads.html[m
+[36m@@ -191,7 +191,7 @@[m
+     <end class="copyright">[m
+         <div>[m
+             <h3>Copyright ©2024 DC College hostel-All rights reserved. </h3>[m
+[31m-            <h6>Made by <a href="https://www.instagram.com/.manjitk.019_____" target="_blank"><strong[m
+[32m+[m[32m            <h6>Made by <a href="https://manjit019.github.io/portfolio.github.io/" target="_blank"><strong[m
+                         style="background-color: #6bcfdee3;padding:0 8px;border-radius: 10px;">Manjit</strong></a>[m
+             </h6>[m
+         </div>[m
+[1mdiff --git a/index.html b/index.html[m
+[1mindex 6a27e47..bbbc4c4 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -363,7 +363,7 @@[m
+     <end class="copyright">[m
+         <div>[m
+             <h3>Copyright ©2024 DC College hostel-All rights reserved. </h3>[m
+[31m-            <h6>Made by <a href="https://www.instagram.com/.manjitk.019_____" target="_blank"><strong[m
+[32m+[m[32m            <h6>Made by <a href="https://manjit019.github.io/portfolio.github.io/" target="_blank"><strong[m
+                         style="background-color: #2b8e9de3;padding:3px 8px;border-radius: 20px;">Manjit</strong></a>[m
+             </h6>[m
+         </div>[m
+[1mdiff --git a/services.html b/services.html[m
+[1mindex b0528a0..370734c 100644[m
+[1m--- a/services.html[m
+[1m+++ b/services.html[m
+[36m@@ -128,7 +128,7 @@[m
+     <end class="copyright">[m
+         <div>[m
+             <h3>Copyright ©2024 DC College hostel-All rights reserved. </h3>[m
+[31m-            <h6>Made by <a href="https://www.instagram.com/.manjitk.019_____" target="_blank"><strong[m
+[32m+[m[32m            <h6>Made by <a href="https://manjit019.github.io/portfolio.github.io/" target="_blank"><strong[m
+                         style="background-color: #6bcfdee3;padding:0 8px;border-radius: 10px;">Manjit</strong></a>[m
+             </h6>[m
+         </div>[m
