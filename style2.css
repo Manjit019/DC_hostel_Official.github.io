@@ -23,17 +23,18 @@
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    border: 8px solid rgba(198, 172, 172, 0.443);
-    border-top: 8px solid #421b1bfd;
-    border-bottom: 8px solid #421b1bfd;
-    animation: spin 1.5s ease infinite;
-    -webkit-animation: spin 1.5s ease infinite;
-    transition: all 0.2s ease;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -ms-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-  }
+    border: 8px solid rgba(190, 224, 232, 0.443);
+    border-top: 8px solid #187583fd;
+    /*border-bottom: 8px solid #421b1bfd;
+    */
+    animation: spin 1s infinite;
+    -webkit-animation: spin 1s infinite;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+}
 }
 
 @keyframes spin {
