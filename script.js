@@ -17,9 +17,17 @@ hamburger.addEventListener('click', ()=>{
 })
 
 //scroll to top
-const scrolltop=document.getElementById("scroll-top");
+const scrolltopBtn=document.getElementById("scroll-top");
 
-scrolltop.addEventListener('click',()=>{
+window.onscroll=function(){
+   if(document.body.scrollTop>50 || document.documentElement.scrollTop>50){
+    scrolltopBtn.style.bottom="1rem";
+   }
+   else{
+    scrolltopBtn.style.bottom="-2rem";
+   }
+}
+scrolltopBtn.addEventListener('click',()=>{
     window.scrollTo(0,0);
 })
 
@@ -37,7 +45,7 @@ downloadbtn.forEach(i =>{
     a.style.display="none";
 
     i.addEventListener('click',()=>{
-        console.log(image.childNodes[1]);
+        // console.log(image.childNodes[1]);
         a.click();
         a.removeChild(a);  
     });
