@@ -5,7 +5,6 @@ const scrolltopBtn = document.getElementById("scroll-top");
 window.onscroll = function () {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     scrolltopBtn.style.bottom = "2rem";
-    // scrolltopBtn.style.right = "4rem";
   }
   else {
     scrolltopBtn.style.bottom = "-4rem";
@@ -32,7 +31,19 @@ hamburger.addEventListener('click', () => {
   headerElem.classList.toggle("active");
 })
 
-//carousol slideshow
+let links = document.querySelectorAll(".right-nav .nav-links");
+
+for (let i = 0; i < links.length; i++) {
+    links[i].addEventListener("click", function() {
+        let current = document.querySelector(".active-link"); // Adding period . for class selector
+        if (current) {
+            current.classList.remove("active-link"); // Remove active class from previously active link
+        }
+        this.classList.add("active-link"); // Add active class to clicked link
+    });
+}
+
+//automatic slide show 
 let slideIndex = 0;
 let timeout;
 const slides = document.querySelectorAll('.slide');
@@ -40,31 +51,40 @@ const indicators = document.querySelectorAll('.indicator');
 
 function showSlides() {
   slides.forEach((slide) => {
-    slide.style.display = 'none';
+    // slide.style.display = 'none';
+    slide.classList.remove("show");
   });
   indicators.forEach((indicator) => {
     indicator.classList.remove('active');
   });
   slideIndex++;
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
+  if(slideIndex < 0){
+    slideIndex=slides.length-1;
   }
-  slides[slideIndex - 1].style.display = 'block';
-  indicators[slideIndex - 1].classList.add('active');
+  if (slideIndex >= slides.length) {
+    slideIndex = 0; 
+  }
+  slides[slideIndex].classList.add('show');
+  // slides[slideIndex].style.display = 'block';
+  indicators[slideIndex].classList.add('active'); 
   timeout = setTimeout(showSlides, 2000);
+
 }
 
 function plusSlides(n) {
   clearTimeout(timeout);
-  showSlides(slideIndex += n);
+  slideIndex+=n -1;
+  showSlides();
 }
 
-function currentSlide(n) {
+function currentSlide(c) {
   clearTimeout(timeout);
-  showSlides(slideIndex = n);
+  slideIndex = c-2;
+  showSlides();
 }
 
-showSlides(); // Start the slideshow
+showSlides();
+
 
 //Notice element
 const container = document.querySelector('.notice-field');

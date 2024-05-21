@@ -44,7 +44,7 @@
 
         <nav class="right-nav ">
             <ul>
-                <li class="nav-links">
+                <li class="nav-links active-link" >
                     <a href="#">Home</a>
                 </li>
                 <li class="nav-links">
@@ -59,9 +59,8 @@
 
             </ul>
             <div class="login">
-                <a href="login.html">
-
-                    <i class="fa-solid fa-circle-user"></i></a>
+                <a href="signin.html">
+                    <i class="fa-solid fa-circle-user"></i>SIGN IN</a>
             </div>
         </nav>
         <div class="three-dot">
@@ -87,7 +86,8 @@
             <div class="hero-btn">
                 <button class="btn-2" onclick="document.getElementById('facility').scrollIntoView();">Explore <i
                         class="fa-solid fa-circle-chevron-right"></i></button>
-                <button class="btn">Sign in <i class="fa-solid fa-right-to-bracket"></i></button>
+                
+                <button class="btn"><a href="signin.html">Sign in <i class="fa-solid fa-right-to-bracket"></i></a></button>
             </div>
 
         </div>
@@ -97,20 +97,23 @@
                 <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
                 <button class="next" onclick="plusSlides(1)">&#10095;</button>
 
-                <div class="slide">
+                <div class="slide fade">
                     <img src="./images/dcfrontpic.jpg" alt="Slide 1">
                 </div>
-                <div class="slide">
+                <div class="slide fade">
                     <img src="./images/dc front2.jpg" alt="Slide 2">
                 </div>
-                <div class="slide">
-                    <img src="./images/dc library2.jpg" alt="Slide 3">
+                <div class="slide fade">
+                    <img src="./images/dc library.jpg" alt="Slide 3">
                 </div>
-
+                <div class="slide fade">
+                    <img src="./images/dc library3.jpg" alt="Slide 4">
+                </div>
                 <div style="text-align:center" class="indicator-container">
                     <span class="indicator" onclick="currentSlide(1)"></span>
                     <span class="indicator" onclick="currentSlide(2)"></span>
                     <span class="indicator" onclick="currentSlide(3)"></span>
+                    <span class="indicator" onclick="currentSlide(4)"></span>
                 </div>
             </div>
         </div>
