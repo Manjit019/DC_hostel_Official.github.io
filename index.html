@@ -54,12 +54,15 @@
                     <a href="downloads.html">Downloads</a>
                 </li>
                 <li class="nav-links">
-                    <a href="#about">About</a>
-                </li>
-                <li class="nav-links">
                     <a href="contactsUs.html">contacts us</a>
                 </li>
+
             </ul>
+            <div class="login">
+                <a href="login.html">
+
+                    <i class="fa-solid fa-circle-user"></i></a>
+            </div>
         </nav>
         <div class="three-dot">
             <i class="fa-solid fa-bars"></i>
@@ -73,77 +76,66 @@
     <!-- Hero section starts -->
     <main class="Main-section grid grid-two-cols">
         <div class="hero-content">
-            <h2 class="footer-common-heading">Welcome</h2>
-            <h3>BC & EBC Hostel Hajipur,Vaishali</h3>
+            <div class="Welcome">
+                <h2 class="footer-common-heading">Welcome</h2>
+                <h3>BC & EBC Hostel Hajipur,Vaishali</h3>
+            </div>
             <p>This is a government hostel that provides
                 various facilities to all BC & EBC Categories
                 Students at free of cost.</p>
 
             <div class="hero-btn">
-                <button class="btn-2" onclick="document.getElementById('facility').scrollIntoView();">Explore </button>
-                <button class="btn" onclick="document.getElementById('gallery').scrollIntoView();">Gallery </button>
+                <button class="btn-2" onclick="document.getElementById('facility').scrollIntoView();">Explore <i
+                        class="fa-solid fa-circle-chevron-right"></i></button>
+                <button class="btn">Sign in <i class="fa-solid fa-right-to-bracket"></i></button>
             </div>
 
         </div>
         <!-- Carousal starts  -->
-        <div class="carousel">
-            <div class="carousel-inner">
-                <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden=""
-                    checked="checked">
-                <div class="carousel-item">
-                    <img src="images/dcfrontpic.jpg" alt="hostel front image" loading="lazy">
+        <div class="carousel-container">
+            <div class="carousel">
+                <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+                <button class="next" onclick="plusSlides(1)">&#10095;</button>
+
+                <div class="slide">
+                    <img src="./images/dcfrontpic.jpg" alt="Slide 1">
                 </div>
-                <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
-                <div class="carousel-item">
-                    <img src="images/dc front2.jpg" alt="hostel front" loading="lazy">
+                <div class="slide">
+                    <img src="./images/dc front2.jpg" alt="Slide 2">
                 </div>
-                <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
-                <div class="carousel-item">
-                    <img src="images/dc library.jpg" alt="hostel library" loading="lazy">
+                <div class="slide">
+                    <img src="./images/dc library2.jpg" alt="Slide 3">
                 </div>
-                <label for="carousel-3" class="carousel-control prev control-1">‹</label>
-                <label for="carousel-2" class="carousel-control next control-1">›</label>
-                <label for="carousel-1" class="carousel-control prev control-2">‹</label>
-                <label for="carousel-3" class="carousel-control next control-2">›</label>
-                <label for="carousel-2" class="carousel-control prev control-3">‹</label>
-                <label for="carousel-1" class="carousel-control next control-3">›</label>
-                <ol class="carousel-indicators">
-                    <li>
-                        <label for="carousel-1" class="carousel-bullet">•</label>
-                    </li>
-                    <li>
-                        <label for="carousel-2" class="carousel-bullet">•</label>
-                    </li>
-                    <li>
-                        <label for="carousel-3" class="carousel-bullet">•</label>
-                    </li>
-                </ol>
+
+                <div style="text-align:center" class="indicator-container">
+                    <span class="indicator" onclick="currentSlide(1)"></span>
+                    <span class="indicator" onclick="currentSlide(2)"></span>
+                    <span class="indicator" onclick="currentSlide(3)"></span>
+                </div>
             </div>
         </div>
-        <!-- Carousal ends  -->
+
 
     </main>
     <!-- Hero section ends  -->
+    <!-- sign in section  -->
 
     <!-- Notice section starts -->
     <section class="notice-section">
-        <h3>Notices <i class="fa-solid fa-bullhorn"></i></h3>
-        <div class="Notice-field">
-            <!-- <marquee behavior="scroll" direction="left"> -->
-            <ul class="notice">
-                <li>Notice..1 for all students </li>
-                <li>Notice..2 for all students </li>
-                <li>Notice..3 for all students</li>
-                <li>This is an official website of DC college Hostel created by Manjit...</li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores voluptatibus alias soluta,
-                    modi
-                    veritatis nemo veniam error mollitia adipisci doloremque libero fuga non qui molestias. Dolorum
-                    eum
-                    tempore ipsam beatae incidunt doloribus reiciendis cupiditate debitis, iste accusantium!
-                    Accusamus,
-                    commodi aliquid.</li>
-            </ul>
-            <!-- </marquee> -->
+        <h3>NOTICES <i class="fa-solid fa-bullhorn"></i></h3>
+        <div class="notice-field">
+            <div class="all-notices">
+                <div class="notice">Notice 1: This site is designed and developed by Manjit.</div>
+                <div class="notice">Notice 2: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                <div class="notice">Notice 3: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</div>
+                <div class="notice">Notice 4: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</div>
+                <div class="notice">Notice 5: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</div>
+            </div>
+            <!-- Add more notices as needed -->
+        </div>
     </section>
     </div>
     <!-- Notice section ends  -->
@@ -156,8 +148,11 @@
         <div class="container grid grid-four--cols">
             <!-- CARD 1 -->
             <div class="gallery-cards">
+                <div class="image-container">
                 <!-- <a href="./images/dc front2.jpg"> -->
                 <img id="myimage1" src="./images/dc front2.jpg" alt="Front pic Hostel" loading="lazy">
+                <span class="title">DC Hostel main gate </span>
+            </div>
                 <!-- </a> -->
                 <div class="gallery-card-desc">
                     <div class="_calendar">
@@ -170,9 +165,12 @@
 
             <!-- CARD 2 -->
             <div class="gallery-cards">
+                <div class="image-container">
                 <!-- <a href="./images/dc library.jpg"> -->
                 <img id="myimage2" src="./images/dc library.jpg" alt="Hostel library" loading="lazy">
                 <!-- </a> -->
+                <span class="title">Library Books</span>
+                 </div>
                 <div class="gallery-card-desc">
                     <div class="_calendar">
                         <i class="fa-solid fa-calendar"></i>
@@ -185,9 +183,12 @@
 
             <!-- CARD 3 -->
             <div class="gallery-cards">
+                 <div class="image-container">
                 <!-- <a href="./images/dc mid.jpg"> -->
                 <img id="myimage3" src="./images/dc mid.jpg" alt="Hostel mid" loading="lazy">
                 <!-- </a> -->
+                <span class="title">Hostel interior</span>
+                 </div>
                 <div class="gallery-card-desc">
                     <div class="_calendar">
                         <i class="fa-solid fa-calendar"></i>
@@ -200,9 +201,12 @@
 
             <!-- CARD 4 -->
             <div class="gallery-cards">
+                 <div class="image-container">
                 <!-- <a href="./images/dc library2.jpg"> -->
                 <img id="myimage4" src="./images/dc library2.jpg" alt="library" loading="lazy">
                 <!-- </a> -->
+                <span class="title">Library book shelf</span>
+                 </div>
                 <div class="gallery-card-desc">
                     <div class="_calendar">
                         <i class="fa-solid fa-calendar"></i>
@@ -214,10 +218,13 @@
             </div>
 
             <!-- CARD 5 -->
-            <div class="gallery-cards">
+            <div class="gallery-cards image extra" style="display: none;">
+                 <div class="image-container">
                 <!-- <a href="./images/dcfrontpic.jpg"> -->
                 <img id="myimage5" src="./images/dcfrontpic.jpg" alt="Front Image" loading="lazy">
                 <!-- </a> -->
+                <span class="title">Hostel Night shot on diwali</span>
+                 </div>
                 <div class="gallery-card-desc">
                     <div class="_calendar">
                         <i class="fa-solid fa-calendar"></i>
@@ -229,10 +236,13 @@
             </div>
 
             <!-- CARD 6 -->
-            <div class="gallery-cards">
+            <div class="gallery-cards image extra" style="display: none;">
+                 <div class="image-container">
                 <!-- <a href="./images/dc r1.jpg"> -->
                 <img id="myimage6" src="./images/dc r1.jpg" alt="Rooms" loading="lazy">
                 <!-- </a> -->
+                <span class="title">Second floor</span>
+                 </div>
                 <div class="gallery-card-desc">
                     <div class="_calendar">
                         <i class="fa-solid fa-calendar"></i>
@@ -244,10 +254,13 @@
             </div>
 
             <!-- CARD 7 -->
-            <div class="gallery-cards">
+            <div class="gallery-cards image extra" style="display: none;">
+                 <div class="image-container">
                 <!-- <a href="./images/dc library3.jpg"> -->
                 <img id="myimage7" src="./images/dc library3.jpg" alt="Library">
                 <!-- </a> -->
+                <span class="title">Discussions in Library</span>
+                 </div>
                 <div class="gallery-card-desc">
                     <div class="_calendar">
                         <i class="fa-solid fa-calendar"></i>
@@ -259,10 +272,13 @@
             </div>
 
             <!-- CARD 8 -->
-            <div class="gallery-cards">
+            <div class="gallery-cards image extra" style="display: none;">
+                 <div class="image-container">
                 <!-- <a href="./images/DC logo.png"> -->
                 <img id="myimage8" src="./images/DC logo.png" alt="Logo Image " loading="lazy">
                 <!-- </a> -->
+                <span class="title">Hostel Logo </span>
+                 </div>
                 <div class="gallery-card-desc">
                     <div class="_calendar">
                         <i class="fa-solid fa-calendar"></i>
@@ -275,7 +291,7 @@
 
         </div>
         <div class="view-more--btn">
-            <button class="btn "><a href="#">View More ⟫</a></button>
+            <button class="btn "><a href="#">View More ▼</a></button>
         </div>
     </section>
     <!-- Gallery section ends  -->
@@ -309,21 +325,26 @@
         <div class="section-quick--links">
             <h1 class="footer-common-heading">Quick links <i class="fa-solid fa-up-right-from-square"></i></h1>
             <ol>
+                <li class="Q-link">
                 <a href="https://www.ekalyan.bih.nic.i" target="_blank">
-                    <li class="Q-link">E Kalyan official</li>
-                </a>
+                    E Kalyan official
+                </a></li>
+                <li class="Q-link">
                 <a href="https://www.ekalyan.bih.nic.in/Login.aspx?Id=7" target="_blank">
-                    <li class="Q-link">BC & EBC Welfare Department</li>
-                </a>
+                    BC & EBC Welfare Department
+                </a></li>
+                <li class="Q-link">
                 <a href="https://state.bihar.gov.in/educationbihar/CitizenHome.html" target="_blank">
-                    <li class="Q-link">Department of Education Bihar</li>
-                </a>
+                    Department of Education Bihar
+                </a></li>
+                <li class="Q-link">
                 <a href="https://pmsonline.bih.nic.in/" target="_blank">
-                    <li class="Q-link">Post Matric Scholorship</li>
-                </a>
+                    Post Matric Scholorship
+                </a></li>
+                <li class="Q-link">
                 <a href="https://www.sarkariresult.com/" target="_blank">
-                    <li class="Q-link">Sarkari result</li>
-                </a>
+                    Sarkari result
+                </a></li>
             </ol>
         </div>
         <!-- Quick links section ends  -->

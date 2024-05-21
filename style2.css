@@ -49,13 +49,16 @@
 
 /* loader component ends  */
 
+/* sign in component  */
+
+
 /* contacts us page style starts */
 
 .contact-form {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  padding: 2rem 4rem;
+  padding: 2rem;
 
   & .fullname {
     display: flex;
@@ -74,16 +77,18 @@
   color: var(--black);
   text-transform: uppercase;
   position: relative;
+  margin-bottom: 1rem;
+  
 }
 
 .common-heading::after {
   content: "";
-  width: 40%;
+  width: 50%;
   height: 4px;
   position: absolute;
   bottom: -8px;
   left: 0;
-  border-bottom: 2px solid var(--supporting-color);
+  border-bottom: 5px solid var(--supporting-color);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   border-radius: 50%;
   -webkit-border-radius: 10px;
@@ -131,6 +136,7 @@ form .btn {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+
 }
 
 input,
@@ -250,9 +256,17 @@ textarea:focus-visible {
 /* downloads page style ends */
 
 /* services page starts  */
-.section-services {
-  width: 100%;
-  height: auto;
+/* under construction css  */
+.under-construction{
+ width: 100%;
+ padding: 1rem;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ & img{
+  max-width: 300px;
+ }
 }
 /* services page starts  */
 
