@@ -317,6 +317,9 @@ header {
     scale: 1;
   }
 }
+.active-link{
+  color: red;
+}
 .login a{
   font-weight: 500;
   padding: 6px 12px;
@@ -597,16 +600,16 @@ header {
   padding: 2rem;
   background-color: var(--supporting-bg-color);
   overflow: auto;
+  
 }
 
 .gallery-cards {
   max-width: 100%;
-
-  & img {
-    max-width: 100%;
+  & img{
+    width: 100%;
     aspect-ratio: 1;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
     transition: all 0.3s ease-in;
     -webkit-transition: all 0.3s ease-in;
     -moz-transition: all 0.3s ease-in;
@@ -614,13 +617,6 @@ header {
     -o-transition: all 0.3s ease-in;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
       rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-    position: relative;
-  }
-
-  & img:hover {
-    filter: blur(4px);
-    -webkit-filter: blur(4px);
-    cursor: pointer;
   }
 
   & .gallery-card-desc {
@@ -634,7 +630,11 @@ header {
     margin-top: -1rem;
     padding: 1rem;
     padding-top: 2rem;
-
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
     & ._calendar {
       display: flex;
       align-items: center;
@@ -664,6 +664,20 @@ header {
 }
 .image-container {
   position: relative;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  overflow: hidden;
+}
+.image-container:hover {
+  & img{
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+  cursor: pointer;
+  scale: 1.2;
+  }
 }
 .title {
   position: absolute;

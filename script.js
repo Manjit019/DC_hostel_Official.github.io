@@ -31,17 +31,18 @@ hamburger.addEventListener('click', () => {
   headerElem.classList.toggle("active");
 })
 
-let links = document.querySelectorAll(".right-nav .nav-links");
 
+//active navbar indicator
+let navContainer=document.querySelector(".right-nav ul");
+let links=navContainer.getElementsByTagName("a");
 for (let i = 0; i < links.length; i++) {
-    links[i].addEventListener("click", function() {
-        let current = document.querySelector(".active-link"); // Adding period . for class selector
-        if (current) {
-            current.classList.remove("active-link"); // Remove active class from previously active link
-        }
-        this.classList.add("active-link"); // Add active class to clicked link
-    });
+   links[i].addEventListener("click",function(){
+    let current =document.getElementsByClassName("active-link");
+    current[0].className=current[0].className.replace("active-link","");
+    this.className+=" active-link";
+   });
 }
+
 
 //automatic slide show 
 let slideIndex = 0;
