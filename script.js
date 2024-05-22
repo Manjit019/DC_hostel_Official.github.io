@@ -178,3 +178,17 @@ downloadbtn.forEach(i => {
   });
 });
 
+
+//file view component
+function embedPDF(pdfUrl) {
+  var object = document.createElement('object');
+  object.id = 'pdfObject';
+  object.type = 'application/pdf';
+  object.data = pdfUrl; 
+  object.style.width = '100%';
+  object.style.height = '100vh';
+
+ var container = document.querySelector('.pdfContainer');
+  container.style.display="block";
+  container.appendChild(object);
+}
