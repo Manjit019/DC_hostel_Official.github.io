@@ -21,7 +21,11 @@ window.addEventListener("load", () => {
     loader.style.display = "none";
   }, 2000);
 })
-
+window.addEventListener('unload',()=>{
+  if(alert("Are you sure to exit ? ")){
+    window.close();
+  }
+})
 // Creating a responsive navbar component
 
 const hamburger = document.querySelector(".three-dot");
@@ -30,18 +34,6 @@ const headerElem = document.querySelector(".header");
 hamburger.addEventListener('click', () => {
   headerElem.classList.toggle("active");
 })
-
-
-//active navbar indicator
-let navContainer=document.querySelector(".right-nav ul");
-let links=navContainer.getElementsByTagName("a");
-for (let i = 0; i < links.length; i++) {
-   links[i].addEventListener("click",function(){
-    let current =document.getElementsByClassName("active-link");
-    current[0].className=current[0].className.replace("active-link","");
-    this.className+=" active-link";
-   });
-}
 
 
 //automatic slide show 
@@ -148,13 +140,6 @@ ViewMoreBtn.addEventListener('click', function (e) {
     }
   }
   ViewMoreBtn.scrollIntoView({ behavior: 'smooth', block: 'end'});
-  // // Scroll to the last extra image
-  // const lastExtraImage = extraImages[extraImages.length - 1];
-  // lastExtraImage.scrollIntoView({ behavior: 'smooth', block: 'end' });
-
-  // if (ViewMoreBtn.querySelector("a").textContent === "View Less ▲") {
-    
-  // }
 
 });
 
@@ -192,3 +177,5 @@ function embedPDF(pdfUrl) {
   container.style.display="block";
   container.appendChild(object);
 }
+
+

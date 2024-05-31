@@ -147,11 +147,11 @@ li {
   -moz-transition: all 0.2s;
   -ms-transition: all 0.2s;
   -o-transition: all 0.2s;
-  & a{
+  & a {
     color: var(--white);
-  text-transform: capitalize;
-  font-family: Poppins, sans-serif;
-  font-size: 1rem;
+    text-transform: capitalize;
+    font-family: Poppins, sans-serif;
+    font-size: 1rem;
   }
 }
 .btn-2 {
@@ -160,7 +160,7 @@ li {
   background-color: transparent;
   border: 1px solid var(--black);
 
-  &:hover{
+  &:hover {
     cursor: pointer;
     border-color: #a333d8;
     color: var(--supporting-color);
@@ -173,7 +173,7 @@ li {
   cursor: pointer;
   color: var(--supporting-color);
   background-image: var(--btn-color-hov);
-  & a{
+  & a {
     color: var(--supporting-color);
   }
 }
@@ -268,32 +268,27 @@ header {
 .right-nav ul {
   display: flex;
   gap: 1rem;
-
-  & .nav-links a{
-    color: var(--white);
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 14px;
-    transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    position: relative;
-  }
-
-  & .nav-links a:hover {
-    color: var(--supporting-color);
-  }
 }
-.nav-links ::after{
+.nav-links a {
+  color: var(--white);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  position: relative;
+}
+.nav-links a::after {
   content: "";
   width: 100%;
   scale: 0;
   height: 4px;
   background: var(--supporting-color);
   position: absolute;
-  top: 25px;
+  top: 28px;
   left: 0;
   border-radius: 50px;
   -webkit-border-radius: 50px;
@@ -306,33 +301,37 @@ header {
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
 }
-.nav-links:hover ::after{
-  scale: 1;
-}
-.nav-links.active-link{
-  & a{
-    color: var(--supporting-color)!important;
-  }
-  ::after{
+
+.nav-links a:hover {
+  color: var(--supporting-color);
+  &::after {
     scale: 1;
   }
 }
-.active-link{
+a.active-link {
+  color: var(--supporting-color) !important;
+  &::after {
+    scale: 1;
+  }
+}
+.active-link {
   color: red;
 }
-.login a{
+.login a {
   font-weight: 500;
   padding: 6px 12px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5px;
-  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-  border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -343,8 +342,10 @@ header {
     cursor: pointer;
     font-size: 28px;
   }
-  &:hover{
-    box-shadow: rgba(28, 233, 237, 0.4) 0px 0px 0px 2px, rgba(18, 68, 126, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  &:hover {
+    box-shadow: rgba(28, 233, 237, 0.4) 0px 0px 0px 2px,
+      rgba(18, 68, 126, 0.65) 0px 4px 6px -1px,
+      rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
     border-radius: 15px;
   }
 }
@@ -438,7 +439,8 @@ header {
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   padding: 5px;
 }
 .indicator-container {
@@ -495,7 +497,7 @@ header {
 .next {
   right: 10px;
 }
-.fade{
+.fade {
   opacity: 0;
   position: absolute;
   bottom: 0;
@@ -505,7 +507,7 @@ header {
   -ms-transition: all 1s ease;
   -o-transition: all 1s ease;
 }
-.fade.show{
+.fade.show {
   opacity: 1;
 }
 /* Hero section ends */
@@ -600,12 +602,11 @@ header {
   padding: 2rem;
   background-color: var(--supporting-bg-color);
   overflow: auto;
-  
 }
 
 .gallery-cards {
   max-width: 100%;
-  & img{
+  & img {
     width: 100%;
     aspect-ratio: 1;
     border-top-left-radius: 8px;
@@ -672,11 +673,11 @@ header {
   overflow: hidden;
 }
 .image-container:hover {
-  & img{
-  filter: blur(4px);
-  -webkit-filter: blur(4px);
-  cursor: pointer;
-  scale: 1.2;
+  & img {
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    cursor: pointer;
+    scale: 1.2;
   }
 }
 .title {
@@ -892,7 +893,7 @@ footer {
   -moz-transition: all 0.4s linear;
   -ms-transition: all 0.4s linear;
   -o-transition: all 0.4s linear;
- 
+
   background-color: var(--maincolor);
   border: 3px solid var(--supporting-color);
   padding: 1rem;
@@ -901,7 +902,7 @@ footer {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-  & .fa-solid{
+  & .fa-solid {
     color: var(--white);
   }
 }
@@ -1152,7 +1153,7 @@ footer {
       font-size: 0.8rem;
       margin: 0 0 0 -2rem;
     }
-    & .Q-link a{
+    & .Q-link a {
       font-size: 13px;
     }
   }
